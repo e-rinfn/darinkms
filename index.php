@@ -16,7 +16,7 @@ $result_data_pelatihan = $conn->query($query_data_pelatihan);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halmaan Utama</title>
+    <title>Halaman Utama</title>
     <link rel="icon" href="image/favicon.png" type="image/png">
 
     <!-- Link Bootstrap CSS -->

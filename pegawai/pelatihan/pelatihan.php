@@ -80,7 +80,6 @@ $result_data_pelatihan = $conn->query($query_data_pelatihan);
         <a href="../dashboard.php"  ><i class="bi bi-house-fill"></i> - Beranda</a>
         <a href="../pengetahuan/pengetahuan.php" ><i class="bi bi-lightbulb-fill"></i> - Pengetahuan</a>
         <a href="#" class="bg-light text-dark"><i class="bi bi-journals"></i> - Pelatihan</a>
-        <a href="../user/user.php"><i class="bi bi-people-fill"></i> - User</a>
     </div>
 
 

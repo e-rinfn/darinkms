@@ -148,17 +148,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <!-- Form Pengajuan -->
     <div class="container form-section">
-        <h1 class="text-center mb-2">Formulir Pembuatan Akun</h1>
+        <h1 class="text-center mb-2">Formulir Pengajuan Akun</h1>
         <br>
             <form action="pengajuan.php" method="POST" enctype="multipart/form-data">
                 <div class="w-50">
                     <div class="d-flex justify-content-between">
                         <div class="mb-3" style="flex: 1; margin-right: 1rem;">
-                            <input type="text" class="form-control border-danger" id="nama" name="nama" placeholder="Nama" required style="width: 100%;">
+                            <input type="text" class="form-control border-danger" id="nama" name="nama" placeholder="Nama" required onkeypress='return harusHuruf(event)' style="width: 100%;">
                         </div>
 
                         <div class="mb-3" style="flex: 1;">
-                            <input type="text" class="form-control border-danger" id="no_hp" name="no_hp" placeholder="Nomor HP" required style="width: 100%;">
+                            <input type="text" class="form-control border-danger" id="no_hp" name="no_hp" placeholder="Nomor HP" required onkeypress='return hanyaAngka(event)' style="width: 100%;">
                         </div>
                     </div>
 
@@ -168,7 +168,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
 
                     <div class="mb-3">
-                        <input type="password" class="form-control border-danger" id="password" name="password" placeholder="Password" required>
+                        <input type="password" class="form-control border-danger" id="password" name="password" placeholder="Kata Sandi" required>
                     </div>
 
                     <div class="mb-3">
@@ -198,3 +198,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </body>
 </html>
+<script>
+
+function harusHuruf(evt){
+        var charCode = (evt.which) ? evt.which : event.keyCode
+        if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+            return false;
+        return true;
+}
+
+function hanyaAngka(evt) {
+		  var charCode = (evt.which) ? evt.which : event.keyCode
+		   if (charCode > 31 && (charCode < 48 || charCode > 57))
+ 
+		    return false;
+		  return true;
+		}
+</script>

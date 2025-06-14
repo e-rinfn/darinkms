@@ -192,8 +192,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p style="color:red;"><?= $error; ?></p>
             <?php endif; ?>
             <form method="POST">
-                <label><input type="text" name="username" placeholder="Username" required></label><br>
-                <label><input type="password" name="password" placeholder="Password" required></label><br>
+                <label><input type="text" name="username" placeholder="Masukan Email" required></label><br>
+                <label><input type="password" name="password" placeholder="Masukan Kata Sandi" required></label><br>
                 <p><a href="pengajuan.php">Belum memiliki akun?</a></p>
 
                 <button type="submit" class="w-50 rounded-pill" style="background-color: #EC1928">Login</button>

@@ -118,7 +118,7 @@ $result_data_pengetahuan = $conn->query($query_data_pengetahuan);
                         <ul class="navbar-nav ">
                             <li class="nav-item dropdown">
                                 <a class="text-light nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ADMINISTRATOR
+                                    ADMIN
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAkun">Akun</a></li>
